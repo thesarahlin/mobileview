@@ -51,7 +51,6 @@ h2{
 }
 
 
-
 .box{
 	background-color: #F5F5DB;
 	border-radius: 5px;
@@ -83,7 +82,7 @@ img{
 	margin-right: auto;
 }
 
-img:hover{
+.ho :hover{
     height: auto;
     width: 200px;
 	filter: grayscale();
