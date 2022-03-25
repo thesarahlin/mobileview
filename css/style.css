@@ -1,0 +1,210 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	background-image: url("../images/background.jpg");
+	background-color: #F5F5DB;
+	font-family: "Trirong", serif;
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: 900;
+	text-align: center;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 1.8em; 
+	color: #5E4B2D;
+	font-weight: 800;
+	text-align: center;
+}
+
+.product{
+	display: flex;
+	flex-wrap: row wrap;
+	align-items: center;
+}
+
+.wrapper1{
+	display: grid;
+	padding: 10px;
+	margin: 5px;
+	border: 5px solid #5E4B2D;
+	border-radius: 15px;
+	grid-template-columns: 650px 650px;
+	background-color: #F5F5DB;
+}
+
+.wrapper{
+	display: grid;
+	padding: 10px;
+	margin: 5px;
+	border: 5px solid #5E4B2D;
+	border-radius: 15px;
+	grid-template-columns: 250px auto 250px auto;
+	background-color: #F5F5DB;
+}
+
+
+
+.box{
+	background-color: #F5F5DB;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 100%;
+	margin: 5px;
+}
+
+.box b{
+	font-size: 1.5em; 
+	color: #705039;
+	font-weight: bold;
+}
+
+.box p{
+	color: #5E4B2D;
+}
+
+/*Style the images*/
+img{
+    height: auto;
+    width: 200px;
+    border: 3px solid #C6AB80;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img:hover{
+    height: auto;
+    width: 200px;
+	filter: grayscale();
+	border: 3px dashed #C6AB80;
+}
+
+
+/*Improve the spacing for paragraphs AND headings*/
+p {
+    padding: 10px;
+	font-family: "Gill Sans", sans-serif;
+}
+
+h1, h2{
+	padding: 10px;
+	font-family: "Trirong", serif;
+}
+
+/*Add borders around the main components and some
+space too*/
+header, main, nav, h1, footer{
+	border: 2px solid grey;
+	margin: 10px 0;
+}
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	font-family: 'Gill Sans', sans-serif;
+	background-color: #F5F5DB;
+	padding:10px;
+	width: 20%;
+	border-right: 3px solid #C6AB80;
+	display: inline-block;
+	text-align: center;
+}
+
+.active{
+	background-color: #C6AB80;
+	font-weight: bold;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+nav li a, nav li a:visited{
+	text-decoration: none;
+	color:#5E4B2D;
+}
+
+.active a, .active a:visited{
+	text-decoration: none;
+	color:#5E4B2D;
+}
+
+/*Added this so the links stay the same color*/
+
+a:link{color: #5E4B2D;}
+a:visited{color: #C6AB80;}
+a:hover{color: grey;}
+
+/*
+. is a class
+# is a ID
+*/
+
+
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	font-family: 'Gill Sans', sans-serif;
+	width: 100%; /* Full width */
+	padding: 20px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: #705039;
+	color: white;
+	font-family: 'Gill Sans', sans-serif;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #5E4B2D;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact {
+	border-radius: 5px;
+	padding: 20px;
+  }
+
+
+  #motion{
+    animation-name: test;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+  }
+
+  @keyframes test {
+    from {width: 25px; opacity: 0;}
+    to {width: 300px; opacity: 1;}
+
+  }
+
+  @media screen and (prefers-reduced-motion: reduce){
+    header img {
+        animation: none;
+      }
+  }

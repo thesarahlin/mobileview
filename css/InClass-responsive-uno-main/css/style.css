@@ -1,0 +1,96 @@
+body{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size:16px;
+}
+
+h1{
+  font-size: 32px;
+  text-align: center;
+  padding:10px;
+}
+
+h2{
+  font-size: 24px;
+}
+
+p{
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+div{
+  padding: 15px;
+  height: 125px;
+}
+
+img{
+  display: block;
+  margin:auto;
+  height: 20vh;  /*Why not percent?*/
+}
+
+.static{
+  display: none;
+}
+
+#blue{
+  background-color: #0000FF;
+}
+
+#red{
+  background-color: #FF0000;
+  text-align: right;
+}
+
+#yellow{
+  background-color: #FFFF00;
+  text-align: right;
+}
+
+#green{
+  background-color: #008000;
+}
+
+footer{
+  text-align: center;
+}
+
+@media screen and (min-width:776px){
+  body{
+    font-family:16px;
+
+  }
+  h1{
+    font-family:Cursive;
+    font-size:64px;
+  }
+
+  h2{
+    font-size:32px;
+  }
+
+  p{
+    font-size:24px;
+  }
+  
+  div{
+    padding:25px;
+  }
+}
+
+
+/*Using additional style sheet for dark mode*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  .gif{
+    display: none;
+  }
+
+  .static{
+    display: block;
+  }
+  
+}
+
